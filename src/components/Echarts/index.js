@@ -23,7 +23,7 @@ export default class App extends Component {
     const tplSource =
       Platform.OS === 'ios'
         ? require('./tpl.html')
-        : require('./tpl.html') || {
+        : {
             uri: 'file:///android_asset/static/tpl.html'
           };
     return (
